@@ -5,6 +5,9 @@
 # Easy:
 # 1. Write a method that returns an array of every number from 1 to 100. 
 
+from hashlib import new
+
+
 def a100():
         return list(range(1,101))
 # print(a100())
@@ -48,9 +51,47 @@ test = [55, 4, 7, 55, 9, 1, 55, 2, 3, 55, 0]
 # year = 2021 - age + 100
 # print(name + ", you will be 100 years old in the year " + str(year))
 
-num = int(input("Give me a number:"))
-if num % 2 == 0: 
-        print("Your number is even.")
-else:
-        print("Your number is odd.")
+# num = int(input("Give me a number:"))
+# if num % 2 == 0: 
+#         print("Your number is even.")
+# else:
+#         print("Your number is odd.")
 
+def less_than_5(nums):
+        return list(a for a in nums if a < 5)
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# print(less_than_5(a))
+
+# Medium:
+
+# 1. Write a method that accepts an array and returns it as a hash. For example, ['a', 'b', 'c'] should turn into {0 => 'a', 1 => 'b', 2 => 'c'}
+
+def arr_to_dict(arr):
+        new_dict = {}
+        i = 0 
+        for a in arr:
+                new_dict[i] = a
+                i += 1
+        return new_dict
+test = ["a", "b", "c"]
+# print(arr_to_dict(test))
+
+# 2. Write a method that accepts a string and returns whether it’s a palindrome.
+
+def palindrome(str):
+        if list(reversed(str.casefold())) == list(str.casefold()):
+                return ("'" + str + "' is a palindrome")
+        else:
+                return ("'" + str + "' is not a palindrome")
+# print(palindrome("Meghan"))
+# print(palindrome("Hannah"))
+
+
+# num = input("Give me three numbers.")
+# print(max(num))
+
+name = input("Give me your name: ")
+print("Hi, " + name)
+age = int(input("How old are you? "))
+year = 2021 - age + 100
+print(f"{name}, you will be 100 years old in the year {year}")
