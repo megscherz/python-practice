@@ -33,4 +33,24 @@ test = [5, 8, 1, 3, 7, 10]
 def fifty_fives(nums):
         return nums.count(55)
 test = [55, 4, 7, 55, 9, 1, 55, 2, 3, 55, 0]
-print(fifty_fives(test))
+# print(fifty_fives(test))
+
+# 6. Write a method that accepts an array of numbers and returns the sum of the numbers. For example, if the input is [1, 5, 7, 9, 2, 0], the output should be 24.
+
+def sum_of_arr(nums):
+        return sum(nums)
+test = [55, 4, 7, 55, 9, 1, 55, 2, 3, 55, 0]
+# print(sum_of_arr(test))
+
+# name = input("Give me your name:")
+# print("Hi, " + name)
+# age = int(input("How old are you?"))
+# year = 2021 - age + 100
+# print(name + ", you will be 100 years old in the year " + str(year))
+
+num = int(input("Give me a number:"))
+if num % 2 == 0: 
+        print("Your number is even.")
+else:
+        print("Your number is odd.")
+
