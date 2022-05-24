@@ -28,11 +28,24 @@
 # else:
 #     print("This number is greater than zero.")
 
-x = 1
+# x = 1
 
-if x < 5:
-    print(0)
-elif x < 100:
-    print(1)
+# if x < 5:
+#     print(0)
+# elif x < 100:
+#     print(1)
+# else:
+#     print(2)
+
+# username = input("Enter username:")
+# print("Hello, " + username)
+
+# firstName = input("Type in your first name:")
+# favoriteColor = input("Type in your favorite color:")
+# print(firstName + "'s favorite color is " + favoriteColor)
+
+response = input("Hi! What is your name?")
+if response != "Qwerty":
+    print("Cool!")
 else:
-    print(2)
+    print("Really?")
