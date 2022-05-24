@@ -90,8 +90,26 @@ def palindrome(str):
 # num = input("Give me three numbers.")
 # print(max(num))
 
-name = input("Give me your name: ")
-print("Hi, " + name)
-age = int(input("How old are you? "))
-year = 2021 - age + 100
-print(f"{name}, you will be 100 years old in the year {year}")
+# name = input("Give me your name: ")
+# print("Hi, " + name)
+# age = int(input("How old are you? "))
+# year = 2021 - age + 100
+# print(f"{name}, you will be 100 years old in the year {year}")
+
+def list_ends(a_list):
+        return [a_list[0], a_list[len(a_list)-1]]
+a = [5, 10, 15, 20, 25]
+# print (list_ends(a))
+
+def element_search(ordered_list, element_to_find):
+        for element in ordered_list:
+                if element == element_to_find:
+                        return True
+                else:
+                        return False
+
+if __name__=="__main__":
+    l = [2, 4, 6, 8, 10]
+    print(element_search(l, 5))
+    print(element_search(l, 8))
+    
